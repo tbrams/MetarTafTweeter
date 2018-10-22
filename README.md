@@ -42,18 +42,16 @@ ubuntu@ip-172-31-19-97:~$ crontab -l
 */5 * * * * ./getTaf > /tmp/getTaf.log 2>&1
 ubuntu@ip-172-31-19-97:~$ 
 ```
-Where "getMetar" is a simple batch file like this
+Where `getMetar` is a simple batch file like this
 
 ```
 #!/bin/bash
 node ./metar/app ekch metar
 ```
 
-And "getTaf" is 
+And `getTaf` is 
 
 ```
 #!/bin/bash
 node ./metar/app ekch taf
 ```
-
-
